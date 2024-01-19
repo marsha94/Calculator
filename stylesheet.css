@@ -33,34 +33,39 @@ footer {
 }
 
 .calc-container {
-  background-color: #92afd6;
+  background-color: #012235;
   padding: 8px;
-  width: 300px;
+  width: 250px;
   height: 500px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  gap: 2px;
 }
 
 input {
-  background-color: aquamarine;
   width: 100%;
   padding: 0;
   margin: 0;
   border: 0;
   flex-grow: 0.25;
   text-align: right;
+  font-size: 24px;
 }
 
 .top {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9faf8;
 }
 
 .display {
   background-color: #3266ab;
-  flex-grow: 1;
-  width: 100%;
+  align-self: flex-end;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .buttons {
@@ -72,12 +77,25 @@ input {
 button {
   padding: 0;
   margin: 0px;
-  margin-top: 8px;
-  border-radius: 16px;
   flex-basis: calc(100% / 4);
   box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .btn-bigger {
   flex-grow: 1;
+}
+
+.btn-color {
+  background-color: #19689696;
+  color: white;
+}
+
+.btn-color1 {
+  background-color: #e8e8e8;
+}
+
+.operator {
+  background-color: #97aacb;
 }
